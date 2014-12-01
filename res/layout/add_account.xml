@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:id="@+id/l_name"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:paddingTop="3dp" >
+
+        <TextView
+            android:id="@+id/txt_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="78dp"
+            android:layout_marginTop="5dp"
+            android:text="Name : " />
+
+        <EditText
+            android:id="@+id/et_name"
+            android:layout_width="140dp"
+            android:layout_height="25dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:inputType="textPersonName" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/l_o_phone"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/l_name"
+        android:paddingTop="3dp" >
+
+        <TextView
+            android:id="@+id/txt_o"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="35dp"
+            android:layout_marginTop="5dp"
+            android:text="Office Phone : " />
+
+        <EditText
+            android:id="@+id/et_o_phone"
+            android:layout_width="140dp"
+            android:layout_height="25dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:inputType="phone" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/website"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/l_o_phone"
+        android:orientation="horizontal"
+        android:paddingTop="3dp" >
+
+        <TextView
+            android:id="@+id/txt_web"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="63dp"
+            android:layout_marginTop="5dp"
+            android:text="WebSite : " />
+
+        <EditText
+            android:id="@+id/et_web"
+            android:layout_width="140dp"
+            android:layout_height="25dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:inputType="text" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/l_e_add"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/website"
+        android:orientation="horizontal"
+        android:paddingTop="3dp" >
+
+        <TextView
+            android:id="@+id/txt_email"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="5dp"
+            android:text="Email Address : " />
+
+        <EditText
+            android:id="@+id/et_email"
+            android:layout_width="140dp"
+            android:layout_height="25dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:inputType="textEmailAddress" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/l_b_add"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/l_e_add"
+        android:orientation="horizontal"
+        android:paddingTop="3dp" >
+
+        <TextView
+            android:id="@+id/txt_b_add"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="22dp"
+            android:layout_marginTop="5dp"
+            android:text="Billing Address : " />
+
+        <EditText
+            android:id="@+id/et_b_add"
+            android:layout_width="140dp"
+            android:layout_height="25dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:inputType="textPostalAddress" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/l_asgn"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/l_b_add"
+        android:orientation="horizontal"
+        android:paddingTop="3dp" >
+
+        <TextView
+            android:id="@+id/txt_asgn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="5dp"
+            android:text="Assigned to : " />
+
+        <Spinner
+            android:id="@+id/spinner_asgn"
+            android:layout_width="140dp"
+            android:layout_height="25dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/l_teams"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/l_asgn"
+        android:orientation="horizontal"
+        android:paddingTop="3dp" >
+
+        <TextView
+            android:id="@+id/txt_teams"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="70dp"
+            android:layout_marginTop="5dp"
+            android:text="Teams : " />
+
+        <Spinner
+            android:id="@+id/spinner_teams"
+            android:layout_width="140dp"
+            android:layout_height="25dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_acnt_save"
+        android:layout_width="120dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/l_teams"
+        android:layout_marginLeft="180dp"
+        android:text="Save" />
+
+    <Button
+        android:id="@+id/btn_acnt_cansl"
+        android:layout_width="120dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/l_teams"
+        android:layout_marginLeft="20dp"
+        android:text="Cancel" />
+
+</RelativeLayout>

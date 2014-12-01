@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+     <LinearLayout
+        android:id="@+id/linear1"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:paddingTop="3dp" >
+
+        <TextView
+            android:id="@+id/txt_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="5dp"
+            android:text="Subject : " />
+
+        <EditText
+            android:id="@+id/et_subj"
+            android:layout_width="140dp"
+            android:layout_height="25dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:inputType="text" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linear2"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/linear1"
+        android:paddingTop="3dp" >
+
+        <TextView
+            android:id="@+id/txt_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="35dp"
+            android:layout_marginTop="5dp"
+            android:text="Start Date : " />
+
+        <EditText
+            android:id="@+id/et_strt_date"
+            android:layout_width="140dp"
+            android:layout_height="25dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:inputType="datetime" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linear3"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/linear2"
+        android:orientation="horizontal"
+        android:paddingTop="3dp" >
+
+        <TextView
+            android:id="@+id/txt_3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="5dp"
+            android:text="Duration Hours : " />
+
+        <EditText
+            android:id="@+id/et_duratrion_hours"
+            android:layout_width="140dp"
+            android:layout_height="25dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:inputType="number" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linear4"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/linear3"
+        android:orientation="horizontal"
+        android:paddingTop="3dp" >
+
+        <TextView
+            android:id="@+id/txt_4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="5dp"
+            android:text="Duration Minutes : " />
+
+        <EditText
+            android:id="@+id/et_duration_mints"
+            android:layout_width="140dp"
+            android:layout_height="25dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:inputType="number" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linear5"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/linear4"
+        android:orientation="horizontal"
+        android:paddingTop="3dp" >
+
+        <TextView
+            android:id="@+id/txt_5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="22dp"
+            android:layout_marginTop="5dp"
+            android:text="Assigned to : " />
+
+        <EditText
+            android:id="@+id/et_assign_to"
+            android:layout_width="140dp"
+            android:layout_height="25dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:inputType="textPersonName" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linear6"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/linear5"
+        android:orientation="horizontal"
+        android:paddingTop="3dp" >
+
+        <TextView
+            android:id="@+id/txt_6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="5dp"
+            android:text="Description : " />
+
+        <EditText
+            android:id="@+id/et_assign_to"
+            android:layout_width="140dp"
+            android:layout_height="25dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:inputType="text" />
+    </LinearLayout>
+
+    
+
+    <Button
+        android:id="@+id/btn_acnt_save"
+        android:layout_width="120dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/linear6"
+        android:layout_marginLeft="180dp"
+        android:text="Save" />
+
+    <Button
+        android:id="@+id/btn_acnt_cansl"
+        android:layout_width="120dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/linear6"
+        android:layout_marginLeft="20dp"
+        android:text="Cancel" />
+
+</RelativeLayout>

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/fragment_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="203dp"
+        android:orientation="vertical" >
+    </LinearLayout>
+
+ <LinearLayout
+     android:layout_width="match_parent"
+     android:layout_height="wrap_content"
+     android:layout_alignParentLeft="true"
+     android:orientation="horizontal" >
+
+     <Button
+         android:id="@+id/btn_call"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+    
+         android:layout_alignParentLeft="true"
+
+         android:text="call" />
+
+     <Button
+         android:id="@+id/btn_email"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+    
+         android:layout_toRightOf="@+id/btn_call"
+         android:text="Email" />
+
+     <Button
+         android:id="@+id/btn_msg"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+   
+         android:layout_toRightOf="@+id/btn_email"
+         android:text="msg" />
+
+     <Button
+         android:id="@+id/btn_edit"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:text="edit" />
+
+     <Button
+         android:id="@+id/btn_edit"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:text="edit" />
+
+     <Button
+         android:id="@+id/btn_location"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+    
+         android:layout_alignParentRight="true"
+         android:layout_alignTop="@+id/btn_edit"
+         android:layout_toRightOf="@+id/btn_edit"
+         android:text="loc" />
+ </LinearLayout>
+
+</RelativeLayout>

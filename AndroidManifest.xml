@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.wakensys.sugercrm_wakensys"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="19" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.wakensys.sugercrm_wakensys.MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.wakensys.sugercrm_wakensys.Account"
+            android:label="@string/accounts" >
+        </activity>
+        <activity
+            android:name="com.wakensys.sugercrm_wakensys.Calls"
+            android:label="@string/calls" >
+        </activity>
+        <activity
+            android:name="com.wakensys.sugercrm_wakensys.Campaigns"
+            android:label="@string/campaings" >
+        </activity>
+        <activity
+            android:name="com.wakensys.sugercrm_wakensys.Cases"
+            android:label="@string/cases" >
+        </activity>
+        <activity
+            android:name="com.wakensys.sugercrm_wakensys.Contact"
+            android:label="@string/contacts" >
+        </activity>
+        <activity
+            android:name="com.wakensys.sugercrm_wakensys.Leads"
+            android:label="@string/leads" >
+        </activity>
+        <activity
+            android:name="com.wakensys.sugercrm_wakensys.Meetings"
+            android:label="@string/meetings" >
+        </activity>
+        <activity
+            android:name="com.wakensys.sugercrm_wakensys.Opportunites"
+            android:label="@string/opportunites" >
+        </activity>
+        
+         <activity
+            android:name="com.wakensys.sugercrm_wakensys.add_new.Add_Account"
+            android:label="@string/new_accounts" >
+        </activity>
+        <activity
+            android:name="com.wakensys.sugercrm_wakensys.add_new.Add_Call"
+            android:label="@string/new_calls" >
+        </activity>
+        <activity
+            android:name="com.wakensys.sugercrm_wakensys.add_new.Add_Campaigns"
+            android:label="@string/new_campaings" >
+        </activity>
+        <activity
+            android:name="com.wakensys.sugercrm_wakensys.add_new.Add_Cases"
+            android:label="@string/new_cases" >
+        </activity>
+        <activity
+            android:name="com.wakensys.sugercrm_wakensys.add_new.Add_Contact"
+            android:label="@string/new_contacts" >
+        </activity>
+        <activity
+            android:name="com.wakensys.sugercrm_wakensys.add_new.Add_Leads"
+            android:label="@string/new_leads" >
+        </activity>
+        <activity
+            android:name="com.wakensys.sugercrm_wakensys.add_new.Add_Meeting"
+            android:label="@string/new_meetings" >
+        </activity>
+        <activity
+            android:name="com.wakensys.sugercrm_wakensys.add_new.Add_Opportunity"
+            android:label="@string/new_opportunites" >
+        </activity>
+        <activity
+            android:name="com.wakensys.sugercrm_wakensys.view_details.Account_details"
+             >
+        </activity>
+    </application>
+
+</manifest>
